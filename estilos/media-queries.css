@@ -24,6 +24,8 @@
     }
 }
 
+/* Desktop */
+
 @media screen and (min-width: 1024px) {
     body {
         background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));

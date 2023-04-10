@@ -17,15 +17,17 @@
         <section id="formulario">
             <h1>Login</h1>
             <p>Seja bem-vindo(a) novamente. <br> Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-            <form action="pag2.html">
+            <form action="pag2.html" autocomplete="on">
                 <div class="entrada">
                     <i class="material-symbols-rounded">person</i>
-                    <input type="email" name="email" id="email" placeholder="seu e-mail" required></div>
+                    <input type="email" name="email" id="email" placeholder="seu e-mail" required autocomplete="email"></div>
                 <div class="entrada">
                     <i class="material-symbols-rounded">key</i>
-                    <input type="password" name="senha" id="senha" placeholder="sua senha" required></div>
+                    <input type="password" name="senha" id="senha" placeholder="sua senha" required autocomplete="current-password"></div>
                 <input type="submit" value="Entrar" id="submit">
-                <a href="https://www.google.com" target="_blank">Esqueci a senha</a>
+                <a href="https://www.google.com" target="_blank">
+                    Esqueci a senha <i class="material-symbols-rounded">mail</i>
+                </a>
             </form>
         </section>
     </section>

@@ -30,13 +30,13 @@ section#login {
     height: 580px;
     background-color: #fff;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.261);
 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -83,9 +83,14 @@ div.entrada {
     border-radius: 10px;
 }
 
-i {
+.entrada i {
     color: white;
     padding: 5px;
+    font-size: 2em;
+}
+
+a i {
+    float: right;
 }
 
 .material-symbols-rounded {
@@ -105,6 +110,12 @@ input#submit {
     border: none;
     cursor: pointer;
     font-size: 1em;
+    transition: .3s;
+}
+
+input#submit:hover {
+    background-color: var(--cor5);
+    color: white;
 }
 
 a {
@@ -114,4 +125,10 @@ a {
     border: 3px solid var(--cor4);
     text-decoration: none;
     color: var(--cor4);
+    transition: .3s;
+}
+
+a:hover {
+    background-color: var(--cor4);
+    color: white;
 }
